@@ -29,21 +29,21 @@
 
 1. Provide the Apache Directive used to perform the requested action
    1. Position the location of root location of the website at:  /var/www/html
-     *                                                  <!-- answer -->
+     * DocumentRoot /var/www/html                                                 <!-- answer -->
    1. To disable the user "steve" from having a web presence on your server.
      *                                                  <!-- answer -->
    1. To create an alias between the URI: /marketing and the file: /user/marketing/www
-     *                                                  <!-- answer -->
+     * Alias /marketing /user/marketing/www                                                 <!-- answer -->
    1. To define the location of the error log to be: /var/log/apps/apache/error.log
-     *                                                  <!-- answer -->
+     * ErrorLog /var/log/apps/apache/error.log                                                 <!-- answer -->
 
 
 1. What is the command used to create the user "steve" within your apache container?
-    *                                                  <!-- answer -->
+    *  RUN useradd steve                                                <!-- answer -->
 
 
 1. What does the "AllowOverride" Directive do?
-    *                                                  <!-- answer -->
+    * Allows you to override apache configurations. We needed to enable this for our current lab so we could use a .htaccess file.                                                 <!-- answer -->
 
 
 1. Given the following command, provide the corresponding HTTP Request Header:
@@ -55,11 +55,12 @@
 
 1. The CGI standard defines a number of environment variables that are provided to a CGI program.  Identify and explain the purpose of 6 of these environment variables.
    1. QUERY_STRING:  the part of URL after ? character.             <!-- answer -->
-   1.                                                               <!-- answer -->
-   1.                                                               <!-- answer -->
-   1.                                                               <!-- answer -->
-   1.                                                               <!-- answer -->
-   1.                                                               <!-- answer -->
+   1. REQUEST_METHOD: GET, POST                                                              <!-- answer -->
+   1. REQUEST_URI: the URI of the requested document.                                                              <!-- answer -->
+   1. CONTENT_TYPE: the conetent type declared in the HTTP response                                                              <!-- answer -->
+   1. CONTENT_LENGTH: the length of the HTTP request body in bytes.                                                              <!-- answer -->
+   1. GATEWAY_INTERFACE: the CGI interface that the server is using such as CGI/1.1                                                               <!-- answer -->
+   1. SERVER_PROTOCOL: the number of the server protocol such as HTTP/1.1                                                               <!-- answer -->
 
 
  1. Consider the following URL and regular expression used to process this string:
@@ -82,8 +83,8 @@
    1. s:                                                          <!-- answer -->
 
 1. Describe each of the following:
-  - process:                                                      <!-- answer -->
+  - process: a list of steps or actions.                                                     <!-- answer -->
   - environment:                                                  <!-- answer -->
-  - stdin:                                                        <!-- answer -->
+  - stdin: Input                                                       <!-- answer -->
   - $?:                                                           <!-- answer -->
  
