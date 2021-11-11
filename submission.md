@@ -64,7 +64,7 @@
       Host: www.csun.edu
       Accept-Language: en-us
       Content-Type: text/html
-      Content-Length: (some values in byets)
+      Content-Length: (some values in bytes)
                                                        <!-- answer -->
     ```                                                      
     <!-- You many add any number of lines in the above code block that you need. -->
